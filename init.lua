@@ -6,9 +6,10 @@ vim.opt.number       = true
 vim.opt.title        = true
 vim.opt.wildmenu     = true
 vim.opt.expandtab    = true
-vim.opt.shiftwidth   = 3
-vim.opt.tabstop      = 3
-vim.opt.scrolloff    = 3
+vim.opt.shiftwidth   = 4
+vim.opt.tabstop      = 4
+vim.opt.softtabstop  = 4
+vim.opt.scrolloff    = 4
 vim.opt.wrap         = false
 vim.opt.compatible   = false
 vim.opt.hlsearch     = false
@@ -23,6 +24,7 @@ vim.opt.laststatus   = 0
 vim.opt.showcmd      = false
 vim.opt.timeoutlen   = 700
 vim.opt.list         = true
+vim.opt.relativenumber = true
 -- vim.opt.mouse        = ""
 
 vim.opt.listchars:append "space:⋅"
@@ -33,7 +35,7 @@ vim.g.mapleader        = " "
 -- vim.g.&t_ZR            = "\e[23m"
 vim.g.zig_fmt_autosave = 0
 
-vim.cmd('colorscheme rust')
+--vim.cmd('colorscheme rust')
 
 local HOME = os.getenv("HOME")
 

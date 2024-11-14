@@ -25,12 +25,6 @@ require('pckr').add({
       'hrsh7th/cmp-calc',
       'f3fora/cmp-spell',
    }},-- Completion
-   {'github/copilot.vim', config = function() 
-      vim.g.copilot_filetypes = { ["*"] = true }
-      vim.keymap.set('i', "\\", 'copilot#Accept("\\\\")', { expr = true, replace_keycodes = false })
-      vim.keymap.set('i', "<M-\\>", '\\', {})
-      vim.g.copilot_no_tab_map = true
-   end },
 
    --
    -- File Managment / Navigation
@@ -166,8 +160,8 @@ require('pckr').add({
          pattern = "*",
          callback = function()
             vim.bo.expandtab    = true
-            vim.bo.shiftwidth   = 3
-            vim.bo.tabstop      = 3
+            vim.bo.shiftwidth   = 4
+            vim.bo.tabstop      = 4
          end
       })
    end }, -- syntax highlighting
