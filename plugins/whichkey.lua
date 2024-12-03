@@ -142,7 +142,7 @@ require('which-key').add({
 
    {"<leader>h", group = 'gh'},
    {"<leader>a",  ":Octo actions<CR>",      desc = 'actions'},
-   {"<leader>r",  ":Octo repo list<CR>",    desc = 'repos'},
+   --{"<leader>r",  ":Octo repo list<CR>",    desc = 'repos'},
    {"<leader>hi", ":Octo issue list<CR>",   desc = 'issues'},
    {"<leader>hI", ":Octo issue search<CR>", desc = 'issues all'},
    {"<leader>hp", ":Octo pr list<CR>",      desc = 'prs'},

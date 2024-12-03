@@ -29,7 +29,7 @@ require('pckr').add({
    --
    -- File Managment / Navigation
    {'is0n/fm-nvim',                  cond = cmd('Xplr')},   -- Used for the File Manager `xplr`
-   {'tpope/vim-fugitive',            cond = cmd('Git')},    -- Git integration
+   -- {'tpope/vim-fugitive',            cond = cmd('Git')},    -- Git integration
    {'nvim-telescope/telescope.nvim', 
       config = function() require('telescope').setup() end,
       cond = cmd('Telescope'),
@@ -45,7 +45,6 @@ require('pckr').add({
          'nvim-telescope/telescope.nvim'
       }
    },
-
 
    --
    -- Utils
@@ -92,6 +91,9 @@ require('pckr').add({
 
    --
    -- Appearance
+   {"ellisonleao/gruvbox.nvim",
+      config = function() require("gruvbox").setup({ contrast = hard, }) end
+   },
    {'lewis6991/gitsigns.nvim', config = function()
       require('gitsigns').setup({
          signs = {
