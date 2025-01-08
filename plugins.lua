@@ -98,6 +98,11 @@ require('pckr').add({
 
    --
    -- Appearance
+	{ "ellisonleao/gruvbox.nvim", config = function ()
+		require("gruvbox").setup({
+			contrast = "hard"
+		})
+	end },
    {'lewis6991/gitsigns.nvim', config = function()
       require('gitsigns').setup({
          signs = {
@@ -154,8 +159,8 @@ require('pckr').add({
          pattern = "*",
          callback = function()
             vim.bo.expandtab    = false
-            vim.bo.shiftwidth   = 3
-            vim.bo.tabstop      = 3
+            vim.bo.shiftwidth   = 4
+            vim.bo.tabstop      = 4
          end
       })
    end }, -- syntax highlighting
