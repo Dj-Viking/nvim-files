@@ -23,6 +23,7 @@ vim.opt.laststatus   = 0
 vim.opt.showcmd      = false
 vim.opt.timeoutlen   = 700
 vim.opt.list         = true
+vim.opt.fixeol       = false
 -- vim.opt.mouse        = ""
 
 vim.opt.listchars:append "space:⋅"
