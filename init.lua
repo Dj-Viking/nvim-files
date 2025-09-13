@@ -6,9 +6,9 @@ vim.opt.number       = true
 vim.opt.title        = true
 vim.opt.wildmenu     = true
 vim.opt.expandtab    = false
-vim.opt.shiftwidth   = 3
-vim.opt.tabstop      = 3
-vim.opt.scrolloff    = 3
+vim.opt.shiftwidth   = 4
+vim.opt.tabstop      = 4
+vim.opt.scrolloff    = 4
 vim.opt.wrap         = false
 vim.opt.compatible   = false
 vim.opt.hlsearch     = false
@@ -23,6 +23,7 @@ vim.opt.laststatus   = 0
 vim.opt.showcmd      = false
 vim.opt.timeoutlen   = 700
 vim.opt.list         = true
+vim.opt.fixeol       = false
 -- vim.opt.mouse        = ""
 
 vim.opt.listchars:append "space:⋅"
@@ -32,11 +33,12 @@ vim.opt.listchars:append "tab:▎⋅"
 vim.g.mapleader        = " "
 vim.g.zig_fmt_autosave = 0
 
-vim.cmd('colorscheme rust')
-
 local HOME = os.getenv("HOME")
 
 dofile(HOME .. "/.config/nvim/plugins.lua")
+
+-- for whatever reason this color scheme has to go below plugins.lua :(
+vim.cmd('colorscheme gruvbox')
 
 local function load_dir(dir)
    require("plenary.scandir").scan_dir(dir, { on_insert = function(file, _)
